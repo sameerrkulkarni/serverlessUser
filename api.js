@@ -6,7 +6,7 @@ const {
   ScanCommand,
   UpdateItemCommand,
 } = require('@aws-sdk/client-dynamodb');
-import { marshall, unmarshall } from '@aws-sdk/util-dynamodb';
+const { marshall, unmarshall } = require('@aws-sdk/util-dynamodb');
 const getPost = async (event) => {
   const response = { statusCode: 200 };
   try {
